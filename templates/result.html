@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh - CN">
+
+<head>
+    <meta charset="UTF - 8">
+    <title>BMI计算结果</title>
+    <script>
+        function printResult() {
+            window.print();
+        }
+    </script>
+    <style>
+      .result-box {
+            border: 1px solid black;
+            padding: 10px;
+            display: inline-block;
+        }
+
+        /* 打印时的样式 */
+        @media print {
+          .no-print {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="result-box">
+        <h1>BMI计算结果</h1>
+        <p>性别：{{ sex }}</p>
+        <p>体重：{{ weight }} kg</p>
+        <p>身高：{{ height }} m</p>
+        <p>BMI指数：{{ bmi }}</p>
+        <p>健康状态：{{ status }}</p>
+        <button onclick="printResult()" class="no-print">打印</button>
+        <a href="/" class="no-print">返回重新计算</a>
+    </div>
+</body>
+
+</html>

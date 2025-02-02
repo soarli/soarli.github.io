@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh - CN">
+
+<head>
+    <meta charset="UTF - 8">
+    <title>BMI计算</title>
+</head>
+
+<body>
+    <h1>BMI计算小程序</h1>
+    <form action="/calculate" method="post">
+        <label for="sex">性别：</label>
+        <select id="sex" name="sex">
+            <option value="男">男</option>
+            <option value="女">女</option>
+        </select><br>
+        <label for="weight">体重 (kg)：</label>
+        <input type="text" id="weight" name="weight" required><br>
+        <label for="height">身高 (m)：</label>
+        <input type="text" id="height" name="height" required><br>
+        <input type="submit" value="计算BMI">
+    </form>
+</body>
+
+</html>
